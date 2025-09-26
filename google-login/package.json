@@ -1,0 +1,55 @@
+{
+  "name": "google-login",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start:dev": "npm run set-env && ng serve",
+    "set-env": "sh ./set-env.sh",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "serve:ssr:google-login": "node dist/google-login/server/server.mjs"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true,
+    "overrides": [
+      {
+        "files": "*.html",
+        "options": {
+          "parser": "angular"
+        }
+      }
+    ]
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/common": "^20.3.2",
+    "@angular/compiler": "^20.3.2",
+    "@angular/core": "^20.3.2",
+    "@angular/forms": "^20.3.2",
+    "@angular/platform-browser": "^20.3.2",
+    "@angular/platform-server": "^20.3.2",
+    "@angular/router": "^20.3.2",
+    "@angular/ssr": "^20.3.3",
+    "express": "^5.1.0",
+    "rxjs": "~7.8.2",
+    "tslib": "^2.8.1",
+    "zone.js": "~0.15.1"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^20.3.3",
+    "@angular/cli": "^20.3.3",
+    "@angular/compiler-cli": "^20.3.2",
+    "@types/express": "^5.0.3",
+    "@types/jasmine": "~5.1.9",
+    "@types/node": "^24.5.2",
+    "jasmine-core": "~5.10.0",
+    "karma": "~6.4.4",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.1",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "typescript": "~5.9.2"
+  }
+}
